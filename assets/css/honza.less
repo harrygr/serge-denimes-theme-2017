@@ -1,0 +1,151 @@
+
+@subSize: 13pt;
+@textSize: 11.5pt;
+@gray: #999;
+@medium: 768px;
+
+.entry-subtitle .sub-heading {
+	display: block;
+	text-align: center;
+	font-size: @subSize;
+}
+
+.blog-grid {
+	@media (min-width: @medium) {
+		margin-top: -4.5rem;
+	}
+}
+
+.bloggrid-box {
+	h3 {
+		font-size: @subSize;
+	}
+	.excerpt a {
+		color: @gray;
+	}
+}
+
+.btn {
+	border: none;
+	padding: .6rem 1.4rem;
+	border: 1px solid #aaa;
+	text-transform: uppercase;
+}
+
+.btn-success {
+	background: black;
+	font-weight: 300;
+}
+
+.cart_totals {
+	h2 {
+		font-weight: 700;
+	}
+	p small {
+		color: #828282;
+	}
+}
+input[name=coupon_code] {
+	border-width: 2px;
+}
+.coupon {
+	input {
+		height: 35px;
+	}
+	input[type=submit] {
+		border-top-width: 2px;
+		border-bottom-width: 3px;
+		border-right-width: 2px;
+		border-color: #ccc;
+		border-bottom-color: #aaa;
+		text-transform: none;
+	}
+}
+
+td.product-name {
+	text-transform: uppercase;
+	.variation-Size {
+		text-transform: none;
+	}
+}
+.woocommerce-cart, .woocommerce-checkout {
+	.page-header {
+		margin-top: 40px;
+	}
+	.alert {
+		margin-top: 40px;
+	}
+}
+.checkout-title {
+	font-weight: 700;
+}
+
+.woocommerce-checkout {
+	.alert-info {
+		text-transform: uppercase;
+	}
+	.form-group {
+		label {
+			text-transform: uppercase;
+		}
+	}
+	.page-header {
+		h1:first-child {
+			text-decoration: line-through;
+		}
+	}
+}
+
+.single-product {
+	.content.row {
+		margin-top: 40px;
+	}
+	.product_title {
+		margin-bottom: 20px;
+	}
+	.price {
+		margin-bottom: 20px;
+	}
+	.text-success {
+		text-transform: uppercase;
+		margin-top: 10px;
+	}
+	.variations_button {
+		margin-bottom: 40px;
+	}
+	.images {
+		padding-left: 120px;
+		width: 60%;
+	}
+	.summary {
+		width: 40%;
+	}
+}
+
+.sidebar .widget ul li {
+	position: relative;
+	text-transform: uppercase;
+	&:after {
+		content: '';
+		position: absolute;
+		top:0;
+		left:0;
+		width: 20px;
+		height: 1px;
+		background-color: #eee;
+	}
+
+}
+
+.bx-custom-pagination {
+	width: 70px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	a {
+		cursor: pointer;
+	}
+	.active img {
+		border: 3px solid #000;
+	}
+}
