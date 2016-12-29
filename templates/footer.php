@@ -79,7 +79,7 @@ if (!$woocommerce) global $woocommerce;
 
         var cartCount = $.cookie("woocommerce_cart_count");
         var cartTotal = $.cookie("woocommerce_cart_total");
-        if (typeof(cartTotal) === "undefined") cartTotal = "£0.00";
+        if (typeof(cartTotal) === "undefined") cartTotal = "0.00";
 
         var cart_url = "<?php echo $woocommerce->cart->get_cart_url(); ?>";
         var shop_url = "<?php echo get_permalink(woocommerce_get_page_id('shop')); ?>";
@@ -95,7 +95,7 @@ if (!$woocommerce) global $woocommerce;
             $('#micro-cart .cart_link_url').attr('href', cart_url);
             $('.cart_link_header a').attr('href', cart_url);
         }
-        $('#micro-cart .cart_amount').html(cartTotal);
+        $('#micro-cart .cart_amount').html('&pound;' + cartTotal);
 
         $('.search-form.form-inline button').on('click', function () {
             $('.search-form.form-inline input').toggleClass('active');

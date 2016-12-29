@@ -39,7 +39,9 @@ function serge_cart_message($message){
 // whenever we add to cart / update cart / etc
 function update_cart_total_cookie() {
 	global $woocommerce;
-	$cart_total = $woocommerce->cart->get_cart_total();
+
+	// echo var_export($woocommerce);
+	$cart_total = $woocommerce->session->subtotal;
 	$cart_count = $woocommerce->cart->cart_contents_count;
 	setcookie('woocommerce_cart_count', $cart_count, 0, '/');
 	setcookie('woocommerce_cart_total', $cart_total, 0, '/');

@@ -6,3 +6,8 @@
 		<span class="cart_amount"></span>
 	</span>
 </div>
+<style>
+  #micro-cart div.cart_totals {
+    display: none;
+  }
+</style>
